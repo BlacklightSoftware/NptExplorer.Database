@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a60b901f-1a6c-44c2-8cbd-1f68a8818509" ChangeDateTime="11/09/2022 21:01:35">
+    <Property Name="ElementName" Value="[dbo].[User].[Username]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fc4d6f20-c72a-46eb-bc4f-99261b3c2fe5" ChangeDateTime="11/17/2022 12:41:06">
+    <Property Name="ElementName" Value="[dbo].[Trails].[StartPointDetails]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Trails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StartPointDetailsEnglish" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="21e37e22-ed53-4b4f-bd16-18021fa20941" ChangeDateTime="12/02/2022 15:46:44">
+    <Property Name="ElementName" Value="[dbo].[LocationHabitats].[Locationid]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LocationHabitats]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LocationId" />
+  </Operation>
+</Operations>

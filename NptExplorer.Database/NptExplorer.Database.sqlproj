@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>NptExplorer.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{d92466f6-3d6c-493a-bd69-b59cae8b82aa}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>NptExplorer.Database</RootNamespace>
+    <AssemblyName>NptExplorer.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Data" />
+    <Folder Include="Scripts\Data\Static" />
+    <Folder Include="Scripts\Data\InitialLoad" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Trails.sql" />
+    <Build Include="dbo\Tables\LocationTrails.sql" />
+    <Build Include="dbo\Tables\Locations.sql" />
+    <Build Include="dbo\Tables\LocationFacilities.sql" />
+    <Build Include="dbo\Tables\LocationBusRoutes.sql" />
+    <Build Include="dbo\Tables\LocationActivities.sql" />
+    <Build Include="dbo\Tables\Facilities.sql" />
+    <Build Include="dbo\Tables\BusRoutes.sql" />
+    <Build Include="dbo\Tables\BadgeTypes.sql" />
+    <Build Include="dbo\Tables\Activities.sql" />
+    <None Include="Scripts\Data\Static\Facilities.sql" />
+    <Build Include="dbo\Tables\LocationHabitats.sql" />
+    <Build Include="dbo\Tables\Habitats.sql" />
+    <None Include="Scripts\Data\Static\Habitats.sql" />
+    <None Include="Scripts\Data\Static\Difficulties.sql" />
+    <None Include="Scripts\Data\Static\Distances.sql" />
+    <None Include="Scripts\Data\Static\Times.sql" />
+    <Build Include="dbo\Tables\UserBadges.sql" />
+    <Build Include="dbo\Tables\Times.sql" />
+    <Build Include="dbo\Tables\PointOfInterests.sql" />
+    <Build Include="dbo\Tables\LocationRatings.sql" />
+    <Build Include="dbo\Tables\LocationPointOfInterest.sql" />
+    <Build Include="dbo\Tables\Distances.sql" />
+    <Build Include="dbo\Tables\Difficulties.sql" />
+    <None Include="Scripts\Data\Static\BadgeTypes.sql" />
+    <Build Include="dbo\Tables\Badges.sql" />
+    <None Include="Scripts\Data\InitialLoad\BusRoutes.sql" />
+    <None Include="Scripts\Data\InitialLoad\LocationBusRoutes.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\UserFriends.sql" />
+    <Build Include="dbo\Tables\LocationHighlights.sql" />
+    <None Include="Scripts\Data\InitialLoad\LocationHabitats.sql" />
+    <Build Include="dbo\Tables\DefaultLocations.sql" />
+    <Build Include="dbo\Tables\BadgePoints.sql" />
+    <Build Include="dbo\Tables\TrophyPoints.sql" />
+    <Build Include="dbo\Tables\CategoryPoints.sql" />
+    <Build Include="dbo\Tables\CategoryPointBadgeType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Data\Static\Activities.sql" />
+    <None Include="Scripts\Data\InitialLoad\Locations.sql" />
+    <None Include="Scripts\Data\InitialLoad\LocationFacilities.sql" />
+    <None Include="Scripts\Data\InitialLoad\LocationActivities.sql" />
+    <None Include="Scripts\Data\InitialLoad\Trails.sql" />
+    <None Include="Scripts\Data\InitialLoad\LocationTrails.sql" />
+    <None Include="Scripts\Data\InitialLoad\PointOfInterests.sql" />
+    <None Include="Scripts\Data\InitialLoad\Badges.sql" />
+    <None Include="Scripts\Data\InitialLoad\BadgePoints.sql" />
+    <None Include="Scripts\Data\InitialLoad\LocationHighlights.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="NptExplorer.Database.refactorlog" />
+  </ItemGroup>
+</Project>

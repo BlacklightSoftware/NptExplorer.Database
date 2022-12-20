@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32804.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NptExplorer.Database", "NptExplorer.Database\NptExplorer.Database.sqlproj", "{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92466F6-3D6C-493A-BD69-B59CAE8B82AA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86284A7E-6BDE-44AD-BA83-D01C831B323A}
+	EndGlobalSection
+EndGlobal

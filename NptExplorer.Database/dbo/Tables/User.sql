@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Users]
+(
+	[Id]		INT IDENTITY (1, 1) NOT NULL,
+	[Name]		VARCHAR (100) NOT NULL, 
+	[UserId]	VARCHAR(50) NOT NULL, 
+    [ExplorerBoard] BIT NOT NULL DEFAULT 0, 
+    CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id] ASC),
+)
